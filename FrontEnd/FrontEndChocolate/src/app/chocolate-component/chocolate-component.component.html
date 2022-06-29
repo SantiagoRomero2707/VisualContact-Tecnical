@@ -1,0 +1,28 @@
+<span>
+    <div>
+        <p class="fs-1">Chocolate Feast Formulario</p>
+        <form class = "row g-3 needs-validation" novalidate [formGroup]="form" (submit)="enviarData()">
+            <div class="mb-3">
+                <label for="validationCustom01" class="form-label">Dinero Total</label>
+                <input class="form-control" id="validationCustom01" placeholder="Costo Total" formControlName="cantidadGastarTotal" type="text" name="lname" required>
+            </div>
+    
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Costo Unitario de los Chocolates</label>
+                <input class="form-control" id="exampleFormControlInput1" placeholder="Costo Unitario" formControlName="precioUnitarioChocolate" type="text" id="unit-cost" name="lname">
+            </div>
+            
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Envolturas para promoción de barra de chocolate gratis</label>
+                <input class="form-control" id="exampleFormControlInput1" placeholder="Envolturas" formControlName="envolturasChocolate" type="text" id="wrapper" name="lname">
+            </div>
+          
+            <div>
+                <button class="btn btn-outline-success me-2" type="submit">Calcular Chocolates</button><br><br>
+            </div>
+        </form>
+    </div>
+    <div>
+        <button class="btn btn-outline-success me-2" type="button"(click)="volverHome()">Menú Principal</button>
+    </div>
+</span>    
